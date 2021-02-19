@@ -9,6 +9,6 @@ setup(
         'numpy==1.17.2',
         'torch==1.4.0',
         'torchvision==0.5.0',
-        'pytorch-lightning==0.9.0',
+        'pytorch-lightning==0.7.6',
     ],
 )
