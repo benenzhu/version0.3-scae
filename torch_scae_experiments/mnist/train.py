@@ -29,8 +29,8 @@ class SCAEMNIST(LightningModule):
         parser = ArgumentParser(parents=[parent_parser], add_help=False)
         # data args
         parser.add_argument('--data_dir', type=str, default=str(pathlib.Path('./data')))
-        parser.add_argument('--num_workers', type=int, default=1)
-        parser.add_argument('--batch_size', type=int, default=32)
+        parser.add_argument('--num_workers', type=int, default=16)
+        parser.add_argument('--batch_size', type=int, default=128)
         # optimizer args
         parser.add_argument('--optimizer_type', type=str, default='RMSprop')
         parser.add_argument('--learning_rate', type=float, default=1e-4)
